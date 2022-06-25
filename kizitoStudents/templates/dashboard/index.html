@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <script src="https://kit.fontawesome.com/106c0b6189.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .dashboard{
+            display: flex;
+            padding: 5px;
+        }
+        nav{
+            background-color: black;
+            /* padding: 10px; */
+            align-items: center;
+        }
+        .nav-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-image{
+            width: 150px;
+            border-radius: 50%;
+        }
+        .nav-items > li{
+            list-style-type: none;
+            text-decoration: none;
+            padding: 20px;
+            text-align: center;
+        }
+        .nav-items > li > a{
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+        .fa-thin{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- TODO: navigation menu -->
+        <nav>
+            <!-- 
+            image - login user
+            about - our system 
+            courses
+            logout
+         -->
+            <div class="nav-items">
+                <img class="profile-image" src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?t=st=1656153501~exp=1656154101~hmac=e34b422e24ed3f9810a632b0d5eea053d80d2384cf1c61b198a3f899ce5be451&w=826"
+                    alt="profile=pic" />
+                <li>
+                    <a href="#">About</a>
+                </li>
+                </li>
+                <li>
+                    <a href="#">Courses</a>
+                </li>
+                <li>
+                    <a href="#">Logout</a>
+                </li>
+            </div>
+        </nav>
+        <!-- TODO: overview section -->
+        <section class="overview">
+            <div class="cards">
+                <!-- 
+                    image
+                    course tittle
+                    course description
+                 -->
+            </div>
+            <div class='cards'>
+
+            </div>
+            <div class='cards'>
+
+            </div>
+        </section>
+        <!-- TODO: progress section -->
+        <!-- TODO: Upcoming tests -->
+    </div>
+
+</body>
+
+</html>
