@@ -8,3 +8,5 @@ def login(request):
     return render(request, 'auth/login.html')
 def signup(request):
     return render(request, 'auth/signup.html')
+def dashboard(request):
+    return render(request, 'dashboard/index.html')
