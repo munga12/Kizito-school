@@ -40,7 +40,7 @@
             border: none;
             outline: none;
         }
-        .login_page > button{
+        form > button{
             width: 30%;
             background-color: blue;
             text-align: center;
@@ -54,18 +54,21 @@
 <body>
     <div class="login_page">
         <h1>Login</h1>
-        <form action="">
+        <form action="" method="POST">
+            {% csrf_token%}
             <div>
                 <label for="username">username</label>
-                <input type="text" name="username" class="input">
+                <input type="text" name="usename" class="input">
             </div>
             <div>
                 <label for="password">Password</label>
                 <input type="password" name="password" class="input">
             </div>
+            <div>
+                <button type="submit" name="submit">Login</button>
+            </div>
         </form>
-        <p>Don't have an account? <a href="/signup">signup</a></p>
-        <button>login</button>
+        <p>Don't have an account? <a href="/register">signup</a></p>
     </div>
 </body>
 </html>
